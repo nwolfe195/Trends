@@ -36,10 +36,9 @@ df_trends = df_trends.drop('isPartial', axis=1)
 # Reset Index
 df_trends.reset_index(level=0, inplace=True)
 # Change column name
-df_trends.columns = ['date', 'Nike-US', 'Adidas-US', 'Under Armour-US', 'Zara-US' ,'H&M-US', 'Louis Vuitton-US',
+df_trends.columns = ['date', 'Nike-US', 'Adidas-US', 'Under Armour-US', 'Zara-US','H&M-US', 'Louis Vuitton-US',
                      'Nike-UK', 'Adidas-UK', 'Under Armour-UK', 'Zara-UK','H&M-UK', 'Louis Vuitton-UK', 'Nike-Germany',
                      'Adidas-Germany', 'Under Armour-Germany', 'Zara-Germany', 'H&M-Germany', 'Louis Vuitton-Germany']
-
 # Data Visualization
 sns.set(color_codes=True)
 dx = df_trends.plot(figsize = (12, 8), x="date", y=['Louis Vuitton-US', 'Louis Vuitton-UK', 'Louis Vuitton-Germany'],
