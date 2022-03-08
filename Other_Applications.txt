@@ -1,0 +1,5 @@
+Implement correlation calculation between entered keywords
+Maintain a list of interested keywords: run automated search for correlation between these keywords and whatever is
+trending on a given time period (weekly?)
+For a set of interested keywords: run automated search for change in correlation between these keywords, to indicate
+that user should look for a real source
